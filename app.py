@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 
 # Load model and scaler
-model = joblib.load(r"E:\Projects\Stroke_prediction\Models\RF_model.pkl")
-scaler_normal = joblib.load(r"E:\Projects\Stroke_prediction\Models\robust_scaler_m.pkl")
+model = joblib.load("RF_model.pkl")
+scaler_normal = joblib.load("robust_scaler_m.pkl")
 
 # Feature group functions
 def create_age_group(age):
